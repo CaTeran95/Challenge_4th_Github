@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sriracha&display=swap" rel="stylesheet">
+<!-- Favicon -->
+    <link rel="icon" href="./assets/img/Favicon/favicon-16x16.png">
+<!-- Cascade style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">    
+    <title>Grid practice</title>
+</head>
+<body class="homeBody">
+    <section class="homeSection">
+        <header>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./assets/Logo/Logo.svg" alt="floristeríaLogo" class="picLogo">
+                    <div class="logoInfo">
+                        <h1 class="companyName">Floristería <span>Nubia</span></h1>
+                        <h2 class="companySlogan">Espacio para slogan</h2>
+                    </div>
+                </div>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./pages/catalog.html">Catálogo</a></li>
+                    <li><a href="./pages/services.html">Servicios</a></li>
+                    <li><a href="./pages/courses.html">Cursos</a></li>
+                    <li><a href="./pages/forum.html">Foro</a></li>
+                    <li><a href="./pages/company.html">Empresa</a></li>
+                </ul>
+            </nav>
+            <div class="searchSection">
+                <input class="searchInput" type="text" placeholder="Introduce tu búsqueda">
+                <img class="searchIcon" src="./assets/img/Font Awesome/magnifying-glass-solid.svg" alt="searchIcon">
+            </div>
+        </header>               
+    </section>
+    <section class="homeProducts">
+        <h2>Nuestros productos</h2>
+        <section class="homeCatalog">
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_1.jpg" alt="Producto_1">
+                <h3>Nombre producto 1</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_2.jpg" alt="Producto_2">
+                <h3>Nombre producto 2</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_3.jpg" alt="Producto_3">
+                <h3>Nombre producto 3</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_4.jpg" alt="Producto_4">
+                <h3>Nombre producto 4</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_5.jfif" alt="Producto_5">
+                <h3>Nombre producto 5</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+            <div class="homeProduct">
+                <img src="./assets/img/Products/Product_6.jfif" alt="Producto_6">
+                <h3>Nombre producto 6</h3>
+                <h3>COP$ 999.999</h3>
+            </div>
+        </section>
+    </section>
+    <section class="videoCourses">
+        <div class="videoCard">
+            <iframe class="vidClip" src="https://www.youtube.com/embed/VQWg7zkEq9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="vidTitle">Título del video 1</h3>
+            <h4 class="vidSubtitle">Subtítulo del video 1</h4>
+            <p class="vidDescription">Descripción del video 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci cumque doloribus, in tempora modi distinctio harum enim optio dicta minus eveniet neque reiciendis, porro accusantium nisi fugit animi voluptate magnam rerum! Omnis quae incidunt beatae voluptate provident molestiae error asperiores voluptatibus dolore nesciunt cum, ratione sequi quos quas quam reiciendis, exercitationem esse nisi excepturi non recusandae ducimus illo possimus. Molestias maxime modi laborum omnis, fuga nobis doloribus sed ipsam provident. Atque ducimus ad consequuntur ab eligendi, quisquam nesciunt soluta.</p>
+            <input class="moreAbout" type="button" value="Conoce más">
+        </div>
+    </section>
+    <section class="ourCompany">
+        <div class="videoCard">
+            <img class="vidClip" src="./assets/img/Nuestra_empresa.jpg" alt="Nuestra empresa">
+            <h3 class="vidTitle">Título del video 1</h3>
+            <h4 class="vidSubtitle">Subtítulo del video 1</h4>
+            <p class="vidDescription">Descripción del video 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci cumque doloribus, in tempora modi distinctio harum enim optio dicta minus eveniet neque reiciendis, porro accusantium nisi fugit animi voluptate magnam rerum! Omnis quae incidunt beatae voluptate provident molestiae error asperiores voluptatibus dolore nesciunt cum, ratione sequi quos quas quam reiciendis, exercitationem esse nisi excepturi non recusandae ducimus illo possimus. Molestias maxime modi laborum omnis, fuga nobis doloribus sed ipsam provident. Atque ducimus ad consequuntur ab eligendi, quisquam nesciunt soluta.</p>
+            <input class="moreAbout" type="button" value="Conoce más">
+        </div> 
+    </section>
+    <footer>
+        <div class="contactForm">
+            <form action="#">
+                <input class="nameInput" type="text" placeholder="Ingresa tu nombre" required>
+                <input class="emailInput" type="email" placeholder="Ingresa tu correo electrónico" required>
+                <textarea class="messageInput" id="userMessage" name="userMessage" rows="4" placeholder="Escribe tu duda, sugerencia o comentario" required></textarea>
+                <div class="termsAndConditions"><input type="checkbox" id="termsAndConditions" value="Acepto" required> <label for="termsAndConditions">Acepto los términos y condiciones</label></div>
+                <input class="formButton submit" type="submit" value="Enviar">
+                <input class="formButton reset" type="reset" name="reset" id="clearForm" value="Limpiar">
+            </form>
+        </div>
+        <div class="sitemap">
+            <h2>Mapa del sitio</h2>
+            <ul class="footerMenu">
+                <li class="menuOpt"> <a href="./pages/catalog.html"></a> Catálogo</li>
+                <li class="menuOpt"> <a href="./pages/services.html"></a> Servicios</li>
+                <li class="menuOpt"> <a href="./pages/courses.html"></a> Cursos</li>
+                <li class="menuOpt"> <a href="./pages/forum.html"></a> Foro</li>
+                <li class="menuOpt"> <a href="./pages/company.html"></a> Empresa</li>
+            </ul>
+        </div>
+        <div class="contactGroup">
+            <a class="socialNetworks facebook" href="#"><img src="./assets/img/Font Awesome/facebook-square-brands.svg" alt="facebookLogo"></a>
+            <a class="socialNetworks twitter" href="#"><img src="./assets/img/Font Awesome/twitter-square-brands.svg" alt="twitterLogo"></a>
+            <a class="socialNetworks instagram" href="#"><img src="./assets/img/Font Awesome/instagram-square-brands.svg" alt="instagramLogo"></a>
+            <img class="footerLogo" src="./assets/Logo/Logo_with_legend_3rd_opt.svg" alt="footerLogo">
+            <div class="contactInfo companyEmail">
+                <img src="./assets/img/Font Awesome/envelope-solid.svg" alt="companyEmail">
+                atención@floristerianub.com
+            </div>
+            <div class="contactInfo phoneNumber">
+                <img src="./assets/img/Font Awesome/phone-solid.svg" alt="phoneNumber">
+                (+57) 123 45 67
+            </div>
+            <div class="contactInfo whatsappNumber">
+                <img src="./assets/img/Font Awesome/whatsapp-brands.svg" alt="whatsAppNumber">
+                (+57) 123 456 78 90
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

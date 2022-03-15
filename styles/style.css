@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    display: block;
+    margin: 0 auto;
+    width: min(100vw, 120rem);
+    font-family: 'Sriracha', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 0 auto;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Definición del estilo del logo */
+
+.logo {
+    width: min(25vw, 500px);
+    display: grid;
+    align-items: center;
+    grid-gap: min(1vw, 20px);
+    grid-template-columns: 40% 60%;
+    
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+    .companyName {
+        font-family: 'Great Vibes', cursive;
+        font-size: min(3.5vw, 4rem);
+        line-height: min(3.5vw, 4rem);
+    }
+        .companyName span {
+            font-size: min(4vw, 4.75rem);
+        }
+
+    .companySlogan {
+        font-size: min(1.5vw, 1.875rem);
+        font-family: 'Sriracha', cursive;
+    }
+
+.menu ul {
+    font-size: min(1.5vw, 1.875rem);
+    line-height: min(1.5vw, 1.875rem);
+    display: flex;
+    flex-direction: row;
+    font-family: 'Sriracha', cursive;
+}
+
+    .menu ul li {
+        padding: min(0.8vw, 1rem) min(1.6vw, 1.875rem);
+    }
+
+.searchSection {
+    display: flex;
+    flex-direction: row;
+    gap: min(1vw, 1.25rem);
+}
+
+    .searchIcon {
+        width: min(1.5vw, 1.875rem);
+    }
+
+    .searchInput {
+        border-radius: calc(min(1.5vw, 1.875rem)/2);
+        border: #C3C3C3 solid 1px;
+        font-family: 'Sriracha', cursive;
+        font-size: min(1vw, 1.25rem);
+        line-height: 1;
+        padding-left: .75vw;
+    }
+
+    .homeProducts {
+        background-color: rgb(188, 207, 243);
+        text-align: center;
+        padding: 2vw min(2.5vw, 3rem);
+    }
+
+    .homeCatalog {
+        width: min(90vw, 84rem);
+        margin: 0 auto;
+        display: flex;
+        gap: min(1vw, 2rem);
+        justify-content: space-between;
+    }
+
+        .homeCatalog h3 {
+            font-size: min(1.5vw, 1.25rem);
+            text-align: center;
+        }
+
+        .homeProduct {
+            padding: 0.5vw;
+            width: min(15vw, 300px);
+            display: inline-block;
+            border: #CECECE solid 1px;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            .homeCatalog {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+                .homeCatalog h3 {
+                    font-size: min(3.5vw, 1.25rem);
+                }
+
+            .homeProduct {
+                width: min(35vw, 240px);
+            }
+            
+        }
+
+/* Configuración de la página de catálogo  */
+
+.catalogSection {
+    justify-content: center;
+    margin: 0 auto;
+    gap: min(2vw, 30px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    width: min(60vw, 72rem);
+    padding: min(15px, 1vw);
+    border: #CECECE 1px solid;
+    border-radius: min(15px, 1vw);
+    display: grid;
+    grid-template-columns: 25% 20% 30% 20% 5%;
+    grid-template-rows: 18% 18% 50% 14%;
+    grid-template-areas: 
+        "picture title title price price"
+        "picture subtitle subtitle subtitle subtitle"
+        "picture description description description description"
+        "picture qualification none none cart";
+    font-family: 'Sriracha', cursive;
+}
+
+.productPicture {
+    width: 100%;
+    grid-area: picture;
+    border-radius: min(15px, 1vw);
+} 
+
+.productTitle {
+    align-self: center;
+    padding-left: 1vw;
+    grid-area: title;
+    font-size: min(1.75vw, 2rem);
+    font-weight: bold;
+    line-height: 1;
+    overflow: hidden;
+}
+.productSubtitle {
+    align-self: center;
+    padding-left: 1vw;
+    grid-area: subtitle;
+    font-size: min(1.5vw, 1.75rem);
+    font-weight: 100;
+    line-height: 1;
+    overflow: hidden;
+}
+.productPrice {
+    align-self: center;
+    padding-left: 1vw;
+    text-align: right;
+    align-self: center;
+    grid-area: price;
+    font-size: min(1.75vw, 2rem);
+    font-weight: bold;
+    line-height: 1;
+    overflow: hidden;
+}
+.productDescription {
+    align-self: center;
+    padding-left: 1vw;
+    grid-area: description;
+    font-size: min(1.25vw, 1.5rem);
+    line-height: 1;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.icon {
+    width: min(2.5vw, 13rem);
+}
+
+.productQualification {
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-area: qualification;
+    
+}
+
+.addToCart {
+    grid-area: cart;
+    height: 100%;
+    justify-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .productCard {
+        width: 45vw;
+        padding: 2vw;
+        /* margin: 0 auto; */
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 74% 10% 8% 8%;
+        grid-template-areas: 
+            "picture picture"
+            "title title"
+            "price price"
+            "qualification cart";
+    }
+
+    .productPicture {
+        padding-bottom: 2vw;
+    }
+
+    .productTitle {
+        font-size: 3.2vw;
+        text-align: center;
+    } 
+    
+    .productPrice {
+        font-size: 2.75vw;
+        text-align: center;
+    }
+
+    .productSubtitle {
+        display: none;
+    }
+
+    .productDescription {
+        display: none;
+    }
+    
+    .icon {
+        width: 4vw;
+    }
+}
+
+/*  */
+
+/* Configuración de la página de servicios */
+
+.services {
+    width: min(100%, 88rem);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1.5vw; */
+    justify-content: space-between;
+}
+
+.serviceCard {
+    padding: 1vw;
+    margin: 0 auto;
+    width: min(28vw, 27rem);
+    text-align: center;
+    display: inline-block;
+    border: #000 solid 1px;
+    border-radius: min(1.6vw, 20px);
+}
+
+    img {
+        width: min(100%, 500px);
+        border-radius: 1vw;
+    }
+
+    .serviceCard h3 {
+        font-size: min(3vw, 3rem);
+        line-height: 1;
+    }
+
+    .serviceCard p {
+        font-size: min(1.5vw, 1.5rem);
+        line-height: 1;
+    }
+
+@media screen and (max-width: 768px) {
+    .services {
+        width: 70vw;
+    }
+
+    .serviceCard {
+        padding: 3vw;
+        width: 70vw;
+    }            
+
+    .serviceCard h3 {
+        font-size: 7.5vw;
+    }
+
+    .serviceCard p {
+        font-size: 4vw;
+    }
+    
+}
+
+/*  */
+
+/* Configuración de la página de cursos */
+
+.videoCard {
+    background-color: #dff0da;
+    width: 70%;
+    height: 20vw;
+    margin-top: min(2vw, 30px);
+    margin-bottom: min(2vw, 30px);
+    margin-left: auto;    
+    margin-right: auto;
+    padding: 1vw 3vw;
+    font-family: 'Sriracha', cursive;
+    line-height: 1;
+    display: grid;
+    column-gap: 3%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 17% 13% 60% 10%;
+
+    grid-template-areas: 
+        "video title"
+        "video subtitle"
+        "video description"
+        "video button";
+}
+
+    .vidClip {
+        grid-area: video;
+        width: 100%;
+        height: 100%;
+    }
+    .vidTitle {
+        grid-area: title;
+        font-size: min(2vw, 2rem);
+        font-weight: bolder;
+    }
+    .vidSubtitle {
+        grid-area: subtitle;
+        font-size: min(1.5vw, 1.75rem);
+        font-weight: normal;
+    }
+    .vidDescription {
+        grid-area: description;
+        font-size: min(1vw, 1.25rem);
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .moreAbout {
+        width: 10vw;
+        border: #CECECE solid 1px;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        font-family: 'Sriracha', cursive;
+        justify-self: flex-end;
+    }
+
+@media screen and (max-width: 768px) {
+    .videoCard {
+        width: 70%;
+        height: 70vw;
+        margin-top: min(5vw, 60px);
+        margin-bottom: min(5vw, 60px);
+        margin-left: auto;    
+        margin-right: auto;
+        /* padding: 3vw 6vw;         */
+        font-family: 'Sriracha', cursive;
+        line-height: 1;
+        display: flex;
+        gap: 2vw;
+        flex-direction: column;
+        column-gap: 3%;
+        align-items: center;
+    }
+
+    .vidClip {
+        grid-area: video;
+        width: 100%;
+        height: 40vw;
+    }
+    .vidTitle {
+        grid-area: title;
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+    .vidSubtitle {
+        grid-area: subtitle;
+        font-size: 2.8vw;
+        font-weight: normal;
+    }
+    .vidDescription {
+        grid-area: description;
+        font-size: 2.4vw;
+        overflow:hidden ;
+    }
+
+    .moreAbout {
+        width: 15vw;
+        border: #CECECE solid 1px;
+        border-radius: 2vw;
+        font-size: 2.4vw;
+        font-family: 'Sriracha', cursive;
+        align-self: flex-end;
+    }
+}
+
+/*  */
+
+footer {
+    background-color: #f5cde9;
+    padding-right: min(10vw, 18rem);
+    padding-left: min(10vw, 18rem);
+    padding-top: min(5vw, 12.5rem);
+    padding-bottom: min(5vw, 12.5rem);
+    margin: 5rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .contactForm form {
+        width: min(25vw, 400px);
+        margin: 0 auto;
+        display: grid;
+        gap: min(1vw, 1rem);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 0.4fr 1fr;
+        grid-template-areas: 
+            "name name"
+            "email email"
+            "message message"
+            "terms terms"
+            "submit reset";
+        font-size: min(1.2vw, 1rem);
+        font-family: 'Sriracha', cursive;
+    }
+        .nameInput {
+            grid-area: name;
+            padding: 0 0.5rem;
+            font-size: min(1.2vw, 1.25rem);
+            font-family: 'Sriracha', cursive;
+            line-height: 1;
+        }
+        .emailInput {
+            grid-area: email;
+            padding-left: min(1vw, 1rem);
+            font-size: min(1.2vw, 1.25rem);
+            font-family: 'Sriracha', cursive;
+        }
+        .messageInput {
+            grid-area: message;
+            padding-left: min(1vw, 0.5rem);
+            font-size: min(1.2vw, 1.25rem);
+            font-family: 'Sriracha', cursive;
+            overflow: visible;
+        }
+        .termsAndConditions {
+            grid-area: terms;
+            display: flex;
+            gap: min(1vw, 1rem);
+            align-items: center;
+        }
+        .submit {
+            grid-area: submit;
+        }
+        .reset {
+            grid-area: reset;
+        }
+
+    .sitemap {
+        font-size: min(1.6vw, 1.5rem);
+        line-height: 1.5;
+    }
+
+    .contactGroup {
+        width: min(100%, 300px);
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        grid-template-areas: 
+            "logo facebook"
+            "logo twitter"
+            "logo instagram"
+            "email email"
+            "phone phone"
+            "whatsapp whatsapp";
+    }
+
+        .socialNetworks img{
+            width: min(4vw, 3rem);
+        }
+
+            .facebook {
+                grid-area: facebook;
+            }
+            .twitter {
+                grid-area: twitter;
+            }
+            .instagram {
+                grid-area: instagram;
+            }
+
+        .footerLogo {
+            height: min(200px, 20vw);
+            align-items: center;
+            grid-area: logo;
+        }
+
+        .contactInfo img {
+            width: min(2vw, 2rem);
+        }
+
+        .contactInfo {
+            height: min(3vw, 2.5rem);
+            display: flex;
+            gap: min(1vw, 1rem);
+            font-size: min(1.5vw, 1rem);
+            align-items: center;
+        }
+
+            .companyEmail {
+                grid-area: email;
+            }
+            .phoneNumber {
+                grid-area: phone;
+            }
+            .whatsappNumber {
+                grid-area: whatsapp;
+            }
+
+/* Redimensionamiento del logo para pantallas de dispositivos móviles */
+
+    @media screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .logo {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-gap: 3%;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+
+        .companyName {
+            font-size: 9vw;
+            line-height: 9vw;
+        }
+
+            .companyName span {
+                font-size: 10.3vw;
+            }
+            
+        .companySlogan {
+            font-size: 4vw;
+            line-height: 4vw;
+        }
+
+        footer {
+            flex-direction: column;
+            gap: 10vw;
+        }
+
+        .menu ul {
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+            .menu ul li {
+                font-size: 3vw;
+                /* padding: 0; */
+            }
+
+        .searchInput {
+            font-size: min(3vw, 1.25rem);
+        }
+
+        .searchIcon {
+            width: min(3vw, 1.25rem);
+        }
+
+        .contactForm form{
+            width: 70%;
+            font-size: min(3vw, 1rem);
+        }
+
+            .nameInput {
+                font-size: min(3.5vw, 1.5rem);    
+            }
+            .emailInput {
+                font-size: min(3.5vw, 1.5rem);    
+            }
+            .messageInput {
+                font-size: min(3.5vw, 1.5rem);     
+            }
+
+            .formButton {
+                font-size: min(3.5vw, 1.5rem);
+            }
+
+        .sitemap {
+            margin: 0 auto;
+            text-align: center;
+            font-size: min(6vw, 1rem);
+        }
+            .sitemap h2{
+                font-size: min(5vw, 2.5rem);
+            }
+            .sitemap ul li {
+                font-size: min(5vw, 2rem);
+            }
+
+        .contactGroup {
+            width: 70vw;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+                "facebook twitter instagram"
+                "logo logo logo"
+                "email email email"
+                "phone phone phone"
+                "whatsapp whatsapp whatsapp";
+            justify-items: center;
+        }
+
+        .footerLogo {
+            height: min(50vw, 300px);
+            margin: 10vw auto;
+        }
+
+        .socialNetworks img {
+            width: min(75px, 15vw);
+        }
+
+        .contactInfo {
+            height: min(10vw, 13vw);            
+            font-size: min(4vw, 1.6rem);
+        }
+
+        .contactInfo img {
+            width: min(5vw, 2rem);
+        }
+    }
+
+    /* Edición de cards de la página Home */
+
+    .videoCourses {
+        background-color: #f7d2a9;
+        padding: min(2.5vw, 3rem);
+    }
+
+        .videoCourses .videoCard {
+            background-color: #f7d2a9;
+            margin: 0 auto;
+        }
+
+    .ourCompany {
+        padding: min(2.5vw, 3rem);
+    }
+
+        .ourCompany .videoCard {
+            background-color: #fff;
+            margin: 0 auto;
+            grid-template-areas: 
+                "title video"
+                "subtitle video"
+                "description video"
+                "button video";
+        }
+
+            .ourCompany .videoCard .moreAbout {
+                justify-self: flex-start;
+            }
+
+    /*  */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sriracha&display=swap" rel="stylesheet">
+<!-- Cascade Style Sheet -->
+    <link rel="stylesheet" href="services.css">
+    <title>Service cards test</title>
+</head>
+<body>
+    <section class="homeSection">
+        <header>
+            <a href="./index.html">
+                <div class="logo">
+                    <img src="./assets/Logo/Logo.svg" alt="floristeríaLogo" class="picLogo">
+                    <div class="logoInfo">
+                        <h1 class="companyName">Floristería <span>Nubia</span></h1>
+                        <h2 class="companySlogan">Espacio para slogan</h2>
+                    </div>
+                </div>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./pages/catalog.html">Catálogo</a></li>
+                    <li><a href="./pages/services.html">Servicios</a></li>
+                    <li><a href="./pages/courses.html">Cursos</a></li>
+                    <li><a href="./pages/forum.html">Foro</a></li>
+                    <li><a href="./pages/company.html">Empresa</a></li>
+                </ul>
+            </nav>
+            <div class="searchSection">
+                <input class="searchInput" type="text" placeholder="Introduce tu búsqueda">
+                <img class="searchIcon" src="./assets/img/Font Awesome/magnifying-glass-solid.svg" alt="searchIcon">
+            </div>
+            <!-- <div class="otherHeaderTools">
+                <div class="userMenu">
+                    <img src="./assets/img/Font Awesome/user-solid.svg" alt="User icon">
+                    <ul>
+                        <li>Hola <i>Usuario</i></li>
+                        <li><a href="./pages/">Mis favoritos</a></li>
+                        <li><a href="./pages/">Mis compras</a></li>
+                        <li><a href="./pages/">Editar perfil</a></li>
+                    </ul>
+                </div>
+            </div> -->
+        </header>        
+    </section>
+    <section class="services">
+        <div class="serviceCard">
+            <img src="../../assets/img/Services/Consulting.png" alt="Consulting picture">
+            <h3>Consultoría</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia id qui reiciendis fugit minus vel aperiam amet nesciunt, quisquam voluptatum odio optio! Quidem illum obcaecati, placeat inventore repellat architecto.</p>
+        </div>
+        <div class="serviceCard">
+            <img src="../../assets/img/Services/Consulting.png" alt="Consulting picture">
+            <h3>Consultoría</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia id qui reiciendis fugit minus vel aperiam amet nesciunt, quisquam voluptatum odio optio! Quidem illum obcaecati, placeat inventore repellat architecto.</p>
+        </div>
+        <div class="serviceCard">
+            <img src="../../assets/img/Services/Consulting.png" alt="Consulting picture">
+            <h3>Consultoría</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia id qui reiciendis fugit minus vel aperiam amet nesciunt, quisquam voluptatum odio optio! Quidem illum obcaecati, placeat inventore repellat architecto.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="contactForm">
+            <form action="#">
+                <input class="nameInput" type="text" placeholder="Ingresa tu nombre" required>
+                <input class="emailInput" type="email" placeholder="Ingresa tu correo electrónico" required>
+                <textarea class="messageInput" id="userMessage" name="userMessage" rows="4" placeholder="Escribe tu duda, sugerencia o comentario" required></textarea>
+                <div class="termsAndConditions"><input type="checkbox" id="termsAndConditions" value="Acepto" required> <label for="termsAndConditions">Acepto los términos y condiciones</label></div>
+                <input class="formButton submit" type="submit" value="Enviar">
+                <input class="formButton reset" type="reset" name="reset" id="clearForm" value="Limpiar">
+            </form>
+        </div>
+        <div class="sitemap">
+            <h2>Mapa del sitio</h2>
+            <ul class="footerMenu">
+                <li class="menuOpt">Catálogo</li>
+                <li class="menuOpt">Servicios</li>
+                <li class="menuOpt">Cursos</li>
+                <li class="menuOpt">Foro</li>
+                <li class="menuOpt">Empresa</li>
+            </ul>
+        </div>
+        <div class="contactGroup">
+            <a class="socialNetworks facebook" href="#"><img src="./assets/img/Font Awesome/facebook-square-brands.svg" alt="facebookLogo"></a>
+            <a class="socialNetworks twitter" href="#"><img src="./assets/img/Font Awesome/twitter-square-brands.svg" alt="twitterLogo"></a>
+            <a class="socialNetworks instagram" href="#"><img src="./assets/img/Font Awesome/instagram-square-brands.svg" alt="instagramLogo"></a>
+            <img class="footerLogo" src="./assets/Logo/Logo_with_legend_3rd_opt.svg" alt="footerLogo">
+            <div class="contactInfo companyEmail">
+                <img src="./assets/img/Font Awesome/envelope-solid.svg" alt="companyEmail">
+                atención@floristerianub.com
+            </div>
+            <div class="contactInfo phoneNumber">
+                <img src="./assets/img/Font Awesome/phone-solid.svg" alt="phoneNumber">
+                (+57) 123 45 67
+            </div>
+            <div class="contactInfo whatsappNumber">
+                <img src="./assets/img/Font Awesome/whatsapp-brands.svg" alt="whatsAppNumber">
+                (+57) 123 456 78 90
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

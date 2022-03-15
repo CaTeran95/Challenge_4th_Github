@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.videoCard {
+    width: 70%;
+    height: 20vw;
+    margin: 0 auto;
+    font-family: 'Sriracha', cursive;
+    line-height: 1;
+    display: grid;
+    column-gap: 3%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 17% 13% 60% 10%;
+
+    grid-template-areas: 
+        "video title"
+        "video subtitle"
+        "video description"
+        "video button";
+}
+
+    .vidClip {
+        grid-area: video;
+        width: 100%;
+        height: 100%;
+    }
+    .vidTitle {
+        grid-area: title;
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+    .vidSubtitle {
+        grid-area: subtitle;
+        font-size: 1.75vw;
+        font-weight: normal;
+    }
+    .vidDescription {
+        grid-area: description;
+        font-size: 1.5vw;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .moreAbout {
+        width: 10vw;
+        border: #CECECE solid 1px;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        font-family: 'Sriracha', cursive;
+        justify-self: flex-end;
+    }
+
+@media screen and (max-width: 768px) {
+    .videoCard {
+        width: 70%;
+        height: 70vw;
+        margin: 0 auto;
+        font-family: 'Sriracha', cursive;
+        line-height: 1;
+        display: flex;
+        gap: 2vw;
+        flex-direction: column;
+        column-gap: 3%;
+        align-items: center;
+    }
+
+    .vidClip {
+        grid-area: video;
+        width: 100%;
+        height: 40vw;
+    }
+    .vidTitle {
+        grid-area: title;
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+    .vidSubtitle {
+        grid-area: subtitle;
+        font-size: 2.8vw;
+        font-weight: normal;
+    }
+    .vidDescription {
+        grid-area: description;
+        font-size: 2.4vw;
+        overflow:hidden ;
+    }
+
+    .moreAbout {
+        width: 15vw;
+        border: #CECECE solid 1px;
+        border-radius: 2vw;
+        font-size: 2.4vw;
+        font-family: 'Sriracha', cursive;
+        align-self: flex-end;
+    }
+}
