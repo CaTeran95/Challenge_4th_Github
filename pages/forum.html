@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sriracha&display=swap" rel="stylesheet">
+<!-- CDN for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- Favicon -->
     <link rel="icon" href="../assets/img/Favicon/favicon-16x16.png">
 <!-- Cascade style sheet -->
@@ -18,7 +20,7 @@
     <section class="homeSection">
         <header>
             <a href="../index.html">
-                <div class="logo">
+                <div class="wow animate__animated animate__fadeIn logo">
                     <img src="../assets/Logo/Logo.svg" alt="floristeríaLogo" class="picLogo">
                     <div class="logoInfo">
                         <h1 class="companyName">Floristería <span>Nubia</span></h1>
@@ -36,7 +38,7 @@
                 </ul>
             </nav>
             <div class="searchSection">
-                <input class="searchInput" type="text" placeholder="Introduce tu búsqueda">
+                <input class="animate__animated animate__headShake searchInput" type="text" placeholder="Introduce tu búsqueda">
                 <img class="searchIcon" src="../assets/img/Font Awesome/magnifying-glass-solid.svg" alt="searchIcon">
             </div>
         </header>        
@@ -81,5 +83,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+
 </body>
 </html>

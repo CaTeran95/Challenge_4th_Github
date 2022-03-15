@@ -93,7 +93,8 @@ header {
     }
 
     .homeProducts {
-        background-color: rgb(188, 207, 243);
+        background: linear-gradient(to right, rgb(190, 218, 255),  rgb(135, 185, 252),  rgb(70, 150, 255));
+        border: none;
         text-align: center;
         padding: 2vw min(2.5vw, 3rem);
     }
@@ -115,7 +116,7 @@ header {
             padding: 0.5vw;
             width: min(15vw, 300px);
             display: inline-block;
-            border: #CECECE solid 1px;
+            /* border: #CECECE solid 1px; */
         }
 
         @media screen and (max-width: 1024px) {
@@ -437,7 +438,7 @@ header {
 /*  */
 
 footer {
-    background-color: #f5cde9;
+    background: linear-gradient(to left, rgb(247, 182, 212), rgb(248, 121, 163), rgb(247, 76, 176));
     padding-right: min(10vw, 18rem);
     padding-left: min(10vw, 18rem);
     padding-top: min(5vw, 12.5rem);
@@ -681,12 +682,12 @@ footer {
     /* Edición de cards de la página Home */
 
     .videoCourses {
-        background-color: #f7d2a9;
+        background: linear-gradient(to right, #fce5c7, #fad29e, #ffc170);
         padding: min(2.5vw, 3rem);
     }
 
         .videoCourses .videoCard {
-            background-color: #f7d2a9;
+            background-color: unset;
             margin: 0 auto;
         }
 

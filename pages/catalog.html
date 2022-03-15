@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sriracha&display=swap" rel="stylesheet">
+<!-- CDN for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- Favicon -->
     <link rel="icon" href="../assets/img/Favicon/favicon-16x16.png">
 <!-- Cascade Style Sheet -->
@@ -18,7 +20,7 @@
     <section class="homeSection">
         <header>
             <a href="../index.html">
-                <div class="logo">
+                <div class="wow animate__animated animate__fadeIn logo">
                     <img src="../assets/Logo/Logo.svg" alt="floristeríaLogo" class="picLogo">
                     <div class="logoInfo">
                         <h1 class="companyName">Floristería <span>Nubia</span></h1>
@@ -36,14 +38,14 @@
                 </ul>
             </nav>
             <div class="searchSection">
-                <input class="searchInput" type="text" placeholder="Introduce tu búsqueda">
+                <input class="animate__animated animate__headShake searchInput" type="text" placeholder="Introduce tu búsqueda">
                 <img class="searchIcon" src="../assets/img/Font Awesome/magnifying-glass-solid.svg" alt="searchIcon">
             </div>
         </header>        
     </section>
     <main class="catalogSection">
         
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_1.jpg" alt="product1Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 1</h3>
@@ -66,7 +68,7 @@
             </div>
             <img class="addToCart" src="../assets/img/Font Awesome/cart-plus-solid.svg" alt="Add to cart product">
         </section>
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_2.jpg" alt="product2Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 2</h3>
@@ -89,7 +91,7 @@
             </div>
             <img class="addToCart" src="../assets/img/Font Awesome/cart-plus-solid.svg" alt="Add to cart product">
         </section>
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_3.jpg" alt="product3Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 3</h3>
@@ -112,7 +114,7 @@
             </div>
             <img class="addToCart" src="../assets/img/Font Awesome/cart-plus-solid.svg" alt="Add to cart product">
         </section>
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_4.jpg" alt="product4Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 4</h3>
@@ -135,7 +137,7 @@
             </div>
             <img class="addToCart" src="../assets/img/Font Awesome/cart-plus-solid.svg" alt="Add to cart product">
         </section>
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_5.jfif" alt="product5Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 5</h3>
@@ -158,7 +160,7 @@
             </div>
             <img class="addToCart" src="../assets/img/Font Awesome/cart-plus-solid.svg" alt="Add to cart product">
         </section>
-        <section class="productCard">
+        <section class="wow animate__animated animate__fadeInLeft productCard">
             <img class="productPicture" src="../assets/img/Products/Product_6.jfif" alt="product6Picture">
             <div class="productTitle">
                 <h3>Nombre del producto 6</h3>
@@ -222,5 +224,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script> 
+
 </body>
 </html>
